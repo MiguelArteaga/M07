@@ -1,6 +1,6 @@
 <html>
  <head>
-    <title>Exemple de lectura de dades a MySQL</title>
+    <title>Paises</title>
     
  </head>
  
