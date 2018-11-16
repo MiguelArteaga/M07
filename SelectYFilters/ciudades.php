@@ -15,7 +15,7 @@
  	
  
  	<?php
- 		$codigo=$_GET["paises"];
+ 		$codigo=$_GET["pais"];
  		$conn = mysqli_connect('localhost','miguel','miguel123');
  
  		mysqli_select_db($conn, 'world');

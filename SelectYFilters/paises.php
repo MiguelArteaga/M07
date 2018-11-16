@@ -29,12 +29,13 @@
         }
 
         echo "<form action='ciudades.php' method='get' target='_blank'>";
-        echo "<select name='paises'>";
         while( $registre = mysqli_fetch_assoc($resultat) ){
-            echo '<option value='.$registre["Code"].'>'.$registre["Name"].'</option>';
+            $imagenes=$registre["Name"].".png";
+            echo '<input type="radio" name="pais" value='.$registre["Code"].'>'.$registre["Name"];
+            echo " <img src='banderas/$imagenes'> ";
         }
+        echo "<br>";
         echo "<input type='submit' name='Submit'>";
-        echo "</select>";
         echo"</form>";
         
         
